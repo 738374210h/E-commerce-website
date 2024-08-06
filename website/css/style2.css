@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(250, 250, 250, 1);
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    background-color: rgb(189 200 265 / 27%);
+
+}
+
+.logo {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.8em;
+    transition: 0.7s ease;
+}
+
+.logo:hover {
+    scale: 0.95;
+}
+
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    /* width: 40%; 
+
+} */
+
+
+.navbar_a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 30px 30px;
+    transition: all 0.2s;
+}
+
+.navbar a:hover {
+    color: rgb(252, 250, 250);
+    background-color: brown;
+}
+
+/* .navbar a.active {
+    color: aliceblue;
+    background-color: brown;
+} */
+
+.home-title {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.title {
+    padding: 200px 5px;
+}
+
+.title .title-own {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    color: rgb(248, 58, 57);
+}
+
+.title .title-tow {
+    font-size: 1.4em;
+    padding-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.title .title-thry {
+    font-size: 1.3em;
+    padding-bottom: 10px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+
+}
+
+.title span {
+    color: rgb(248, 58, 57);
+}
+
+.add {
+    display: inline-block;
+    text-decoration: none;
+
+    color: rgb(32, 0, 0);
+    border: 1px solid rgb(202, 21, 21);
+    padding: 12px 40px;
+    border-radius: 20px;
+    background-color: rgb(252, 250, 250);
+    font-size: 1em;
+    font-weight: 800;
+    transition: 0.7s ease;
+}
+
+.add:hover {
+    background-color: rgb(238, 55, 55);
+    color: rgb(240, 240, 240);
+    transform: scale(1.1);
+}
+
+.img-i {
+    margin-left: 30px;
+    width: 40%;
+    transition: 0.7s ease;
+}
+
+.img-i:hover {
+    transform: scale(1.1);
+}
+
+.title-price-h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+}
+
+.title-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.title-img img {
+    width: 250px;
+    height: 250px;
+    transition: 0.8s ease;
+    padding-top: 10px;
+}
+
+.title-img img:hover {
+    transform: scale(1.1);
+}
+
+.title-a {
+    background-color: #fff;
+    min-height: 250px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    width: 350px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+.info {
+    padding: 20px 50px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 800;
+    margin-right: 50px;
+
+}
+
+.info .add-now:hover {
+    background-color: rgb(238, 74, 74);
+    color: rgb(255, 255, 255);
+}
+
+.add-now {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgb(202, 202, 202);
+    color: rgb(50, 31, 216);
+    border-radius: 10px;
+    padding: 10px 15px;
+
+}
+
+.add-price {
+    display: flex;
+    text-decoration: none;
+    padding: 10px 10px;
+    color: rgb(28, 28, 223);
+    margin-right: 10px;
+}
+
+.call-h2 {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 10px 30px;
+}
+
+.icon a {
+    text-decoration: none;
+    color: rgb(235, 17, 46);
+    padding: 0px 15px;
+    transition: 0.7s ease;
+}
+
+.icon a:hover {
+    transform: scale(1.1);
+}
+
+.design {
+    display: flex;
+    justify-content: start;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+
+main {
+    max-width: 800px;
+}
+
+main img {
+    width: 40%;
+}
+
+main .price {
+    font-size: 1.22rem;
+    font-weight: bold;
+    color: red;
+}
+
+main .product-details {
+    margin-inline: 1.1rem;
+}
+
+main .description {
+    text-align: left;
+    margin-block: 1.2rem;
+    line-height: 1.44rem;
+}
+
+main .add1 {
+    display: table;
+    margin-bottom: 1em;
+    text-decoration: none;
+
+    color: rgb(32, 0, 0);
+    border: 1px solid rgb(202, 21, 21);
+    padding: 12px 40px;
+    border-radius: 4px;
+    background-color: rgb(252, 250, 250);
+    font-size: 1em;
+    font-weight: 800;
+    transition: 0.7s ease;
+}
+
+@media(max-width:1100px) {
+    .home-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        flex-direction: column-reverse;
+    }
+
+    .img-i {
+        margin: 120px 0 40px;
+    }
+
+    .title {
+        padding: 20px 0 200px;
+    }
+
+}
+
+@media(max-width:1023px) {
+    header {
+        height: 10vh;
+        padding: 12px 51px 11px 139px;
+    }
+
+    .logo {
+        font-size: 2.5em;
+    }
+
+    .navbar {
+        padding-left: 8px;
+    }
+
+    .navbar a {
+        padding: 18px;
+        font-size: 1.1em;
+    }
+
+    .title {
+        padding: 0px 100px 200px;
+    }
+
+    .home-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        flex-direction: column-reverse;
+    }
+
+    .img-i {
+        margin: 120px 0 40px;
+    }
+
+
+
+
+}
+
+@media(max-width:800px) {
+    header {
+        padding: 10px 125px
+    }
+
+    .logo {
+        font-size: 2em;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .title {
+        padding: 0px 41px 200px;
+    }
+
+    .img-i {
+        width: 51%;
+    }
+
+    .img-i img {
+        width: 100%;
+    }
+
+
+    .navbar a {
+        font-size: 1.2em;
+        padding: 20px 11px;
+    }
+
+
+}
+
+@media (max-width:650px) {
+    header {
+        padding: 10px 100px;
+    }
+
+    body {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:500px) {
+    header {
+        padding: 10px 40px;
+    }
+
+    body {
+        font-size: 10px;
+    }
+
+    .navbar a {
+        padding: 20px 5px;
+    }
+}
